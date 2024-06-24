@@ -1,0 +1,21 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "This is a restaurant website using webpack",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Users/connor/Documents/GitHub/restaurant"
+  },
+  "author": "Connor",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
