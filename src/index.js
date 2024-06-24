@@ -1,18 +1,9 @@
-import _ from "lodash";
+import { showHomepage } from "./home";
+import { showMenu } from "./menu";
+import { showAbout } from "./about";
 
-function component() {
-  const element = document.createElement("div");
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(["Hello", "webpack1"], " ");
-
-  return element;
-}
-
-document.body.appendChild(component());
-
-document.getElementById("home-button").addEventListener("click", testAlert);
-
-function testAlert() {
-    alert("Working!");
-}
+document.addEventListener("DOMContentLoaded", (event) => {
+    document.getElementById("home-button").addEventListener("click", showHomepage);
+    document.getElementById("menu-button").addEventListener("click", showMenu);
+    document.getElementById("about-button").addEventListener("click", showAbout);
+});
